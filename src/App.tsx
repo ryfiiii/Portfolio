@@ -10,13 +10,15 @@ const App = () => {
 
     return (
         <>
-            <Header />
-            <Splash />
-            <Profile />
-            <Skill />
-            <Creation />
-            <Contact />
-            <Footer />
+            <div className="font-inter text-slate-600">
+                <Header />
+                <Splash />
+                <Profile />
+                <Skill />
+                <Creation />
+                <Contact />
+                <Footer />
+            </div>
         </>
     )
 }
