@@ -24,9 +24,9 @@ const Profile = () => {
                             </div>
                             <p className="text-3xl font-semibold text-center lg:text-start">経歴</p>
                             <div className="flex flex-col gap-3">
-                                <p className="underline">2023/04 中小SES会社</p>
+                                <p className="underline">2023/04 中小SES企業</p>
                                 <p>未経験から新卒としてエンジニアとしてのキャリアをスタート。ウェブ開発を主に様々な技術の基礎を学ぶ。</p>
-                                <p className="underline">2024/04 某国内クラウド会社</p>
+                                <p className="underline">2024/04 某国内クラウド企業</p>
                                 <p>基盤システム・VPS系統のシステム保守・新規開発を行う。</p>
                             </div>
                         </div>

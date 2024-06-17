@@ -11,9 +11,9 @@ export const creation: Creation[] = [
     {
         name: "Portfolio",
         image: portfolioImage,
-        description: "自己紹介や身に付けている技術スタック、制作物を掲載しているポートフォリオサイト",
-        link: null,
-        github: "https://github.com/ryfiiii/Portfolio",
+        description: "自己紹介や経歴、学習した技術スタック、制作物などを掲載しているポートフォリオサイト",
+        link: "https://portfolio.ryfiii.com/",
+        github: "https://github.com/ryfiiii/Portfolio?tab=readme-ov-file#readme",
         stack: ["React", "TypeScript", "Tailwind CSS"],
     },
     {
@@ -38,7 +38,7 @@ export const creation: Creation[] = [
         description: "ブログ記事の投稿・閲覧・購入が出来るプラットフォーム",
         link: null,
         github: "https://github.com/ryfiiii/Laravel_Stripe_Blog?tab=readme-ov-file#readme",
-        stack: ["Laravel", "Stripe", "MySQL"],
+        stack: ["Laravel", "Stripe", "microCMS", "MySQL"],
     },
     {
         name: "RealtimeChat",

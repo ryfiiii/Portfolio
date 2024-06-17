@@ -34,7 +34,7 @@ export const frontend: Skill[] = [
     {
         name: "Sass",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
-        level: 3,
+        level: 4,
     },
     {
         name: "Tailwind CSS",

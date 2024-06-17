@@ -1,3 +1,4 @@
+import SkillCard from "../Components/Ui/SkillCard";
 import { backend, frontend, others } from "../Config/Skill";
 
 const Skill = () => {
@@ -11,11 +12,7 @@ const Skill = () => {
                     <h3 className="text-slate-200 drop-shadow-2xl font-bold text-center text-2xl border-b-2 border-slate-900 font-noto-sans">フロントエンド</h3>
                     <div className="flex items-center justify-center flex-wrap gap-12 w-full">
                         {frontend.map((skill, index) => (
-                            <div key={index} className="bg-white h-16 w-52 rounded-lg shadow-lg transform hover:duration-200 hover:scale-110 flex items-center justify-center">
-                                <img src={skill.icon} alt={skill.name} className="h-10 w-10" loading="lazy" />
-                                <p>{skill.name}</p>
-                                <p>lv: {skill.level}</p>
-                            </div>
+                            <SkillCard index={index} skill={skill} />
                         ))}
                     </div>
 
@@ -23,23 +20,15 @@ const Skill = () => {
                     <h3 className="text-slate-200 drop-shadow-2xl font-bold text-center text-2xl border-b-2 border-slate-900 font-noto-sans">バックエンド</h3>
                     <div className="flex items-center justify-center flex-wrap gap-12 w-full">
                         {backend.map((skill, index) => (
-                            <div key={index} className="bg-white h-16 w-52 rounded-lg shadow-lg flex items-center justify-center">
-                                <img src={skill.icon} alt={skill.name} className="h-10 w-10" loading="lazy" />
-                                <p>{skill.name}</p>
-                                <p>lv: {skill.level}</p>
-                            </div>
+                            <SkillCard index={index} skill={skill} />
                         ))}
                     </div>
 
                     {/* その他 */}
-                    <h3 className="text-slate-200 drop-shadow-2xl font-bold text-center text-2xl border-b-2 border-slate-900 font-noto-sans">バックエンド</h3>
+                    <h3 className="text-slate-200 drop-shadow-2xl font-bold text-center text-2xl border-b-2 border-slate-900 font-noto-sans">その他</h3>
                     <div className="flex items-center justify-center flex-wrap gap-12 w-full">
                         {others.map((skill, index) => (
-                            <div key={index} className="bg-white h-16 w-52 rounded-lg shadow-lg flex items-center justify-center">
-                                <img src={skill.icon} alt={skill.name} className="h-10 w-10" loading="lazy" />
-                                <p>{skill.name}</p>
-                                <p>lv: {skill.level}</p>
-                            </div>
+                            <SkillCard index={index} skill={skill} />
                         ))}
                     </div>
 
