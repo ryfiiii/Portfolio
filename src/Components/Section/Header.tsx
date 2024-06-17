@@ -1,13 +1,13 @@
 const Header = () => {
     return (
         <header className="fixed w-full z-[9999]">
-            <div className="flex justify-between items-center py-3 px-14 bg-slate-100 shadow-md">
-                <div className="font-bold text-2xl">
+            <div className="flex justify-between items-center py-3 px-4 md:px-14 bg-slate-100 shadow-md">
+                <div className="font-bold text-xl md:text-2xl">
                     <a href="#splash">
                         <h1>PortFolio</h1>
                     </a>
                 </div>
-                <ul className="flex gap-x-5">
+                <ul className="hidden md:flex gap-x-5">
                     <li>
                         <a href="#profile">Profile</a>
                     </li>
