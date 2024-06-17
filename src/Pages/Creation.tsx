@@ -11,7 +11,7 @@ const Creation = () => {
                     {/* 制作物 */}
                     <div className="flex flex-col gap-12">
                         {creation.map((item, index) => (
-                            <CreationCard index={index} item={item} />
+                            <CreationCard key={index} item={item} />
                         ))}
                     </div>
 

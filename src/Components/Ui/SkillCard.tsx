@@ -1,18 +1,17 @@
 import { Skill } from "../../Types/types";
 
 interface SkillCardProps {
-    index: number;
     skill: Skill;
 }
 
-const SkillCard = ({ index, skill }: SkillCardProps) => {
+const SkillCard = ({ skill }: SkillCardProps) => {
 
     const getGaugeColor = (index: number) => {
         return index <= skill.level ? 'bg-yellow-300' : 'bg-slate-300';
     };
 
     return (
-        <div key={index} className="flex justify-center items-center flex-col bg-white rounded-lg w-60 h-16 shadow-lg">
+        <div className="flex justify-center items-center flex-col bg-white rounded-lg w-60 h-16 shadow-lg">
             <div className="flex justify-center items-center gap-2">
                 <img src={skill.icon} alt={skill.name} className="h-8 w-8" loading="lazy" />
                 <p className="text-xl font-bold">{skill.name}</p>

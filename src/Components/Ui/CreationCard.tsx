@@ -4,13 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 interface CreationCardProps {
-    index: number;
     item: Creation;
 }
 
-const CreationCard = ({ index, item }: CreationCardProps) => {
+const CreationCard = ({ item }: CreationCardProps) => {
     return (
-        <div className="w-full md:w-2/3 lg:w-3/4 mx-auto min-h-64 rounded-lg shadow-lg border-slate-100 border-2 flex flex-col lg:flex-row" key={index}>
+        <div className="w-full md:w-2/3 lg:w-3/4 mx-auto min-h-64 rounded-lg shadow-lg border-slate-100 border-2 flex flex-col lg:flex-row">
             <img src={item.image} alt={item.name} className="w-full lg:w-1/3 h-64 object-cover rounded-ss-lg rounded-se-lg lg:rounded-es-lg lg:rounded-se-none" />
             <div className="flex flex-col gap-8 py-8 px-12 w-full">
                 <div className="flex gap-2 justify-center items-center">
