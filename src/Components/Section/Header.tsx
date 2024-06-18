@@ -1,11 +1,13 @@
-// import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
-const Header = () => {
+interface HeaderProps {
+    isScrolling: boolean;
+}
+
+const Header = ({ isScrolling }: HeaderProps) => {
 
     const [navActive, setNavActive] = useState(false);
 
@@ -51,10 +53,6 @@ const Header = () => {
                                 <div className="w-full h-full fixed top-[52px] md:top-[56px] left-0 backdrop-blur-md bg-white/30 z-10">
                                     <ul className="flex flex-col gap-y-10 text-center text-xl p-20">
                                         <li className="flex flex-col gap-1">
-                                            <a href="#splash" onClick={(e) => smoothScroll('splash', e)}>Home</a>
-                                            <div className="bg-rainbow h-[1px] w-full" />
-                                        </li>
-                                        <li className="flex flex-col gap-1">
                                             <a href="#profile" onClick={(e) => smoothScroll('profile', e)}>Profile</a>
                                             <div className="bg-rainbow h-[1px] w-full" />
                                         </li>
@@ -79,13 +77,13 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            {/* <div className="fixed right-5 bottom-5">
+            <div className={`z-[9999] right-5 bottom-5 fixed transform transition-opacity duration-500 ${isScrolling ? 'opacity-100' : 'opacity-0'}`}>
                 <a href="#splash" onClick={(e) => smoothScroll('splash', e)}>
-                    <span className="animate-bounce bg-slate-100 hover:bg-slate-300 transform hover:duration-300 w-10 md:w-12 h-10 md:h-12 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
+                    <span className="animate-bounce bg-slate-100 w-10 md:w-12 h-10 md:h-12 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
                         <FontAwesomeIcon icon={faChevronUp} className="text-purple-500 text-lg" />
                     </span>
                 </a>
-            </div> */}
+            </div>
         </>
     );
 };
