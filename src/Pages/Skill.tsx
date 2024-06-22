@@ -1,4 +1,6 @@
 import SkillCard from "../Components/Ui/SkillCard";
+import SlideInLeft from "../Components/Ui/SlideInLeft";
+import SlideInRight from "../Components/Ui/SlideInRight";
 import { backend, frontend, others } from "../Config/Skill";
 
 const Skill = () => {
@@ -10,27 +12,33 @@ const Skill = () => {
 
                     {/* フロントエンド */}
                     <h3 className="text-slate-200 drop-shadow-2xl font-bold text-center text-2xl border-b-2 border-slate-900 font-noto-sans">フロントエンド</h3>
-                    <div className="flex items-center justify-center flex-wrap gap-12 w-full">
-                        {frontend.map((skill, index) => (
-                            <SkillCard key={index} skill={skill} />
-                        ))}
-                    </div>
+                    <SlideInLeft>
+                        <div className="flex items-center justify-center flex-wrap gap-12 w-full">
+                            {frontend.map((skill, index) => (
+                                <SkillCard key={index} skill={skill} />
+                            ))}
+                        </div>
+                    </SlideInLeft>
 
                     {/* バックエンド */}
                     <h3 className="text-slate-200 drop-shadow-2xl font-bold text-center text-2xl border-b-2 border-slate-900 font-noto-sans">バックエンド</h3>
-                    <div className="flex items-center justify-center flex-wrap gap-12 w-full">
-                        {backend.map((skill, index) => (
-                            <SkillCard key={index} skill={skill} />
-                        ))}
-                    </div>
+                    <SlideInRight>
+                        <div className="flex items-center justify-center flex-wrap gap-12 w-full">
+                            {backend.map((skill, index) => (
+                                <SkillCard key={index} skill={skill} />
+                            ))}
+                        </div>
+                    </SlideInRight>
 
                     {/* その他 */}
                     <h3 className="text-slate-200 drop-shadow-2xl font-bold text-center text-2xl border-b-2 border-slate-900 font-noto-sans">その他</h3>
-                    <div className="flex items-center justify-center flex-wrap gap-12 w-full">
-                        {others.map((skill, index) => (
-                            <SkillCard key={index} skill={skill} />
-                        ))}
-                    </div>
+                    <SlideInLeft>
+                        <div className="flex items-center justify-center flex-wrap gap-12 w-full">
+                            {others.map((skill, index) => (
+                                <SkillCard key={index} skill={skill} />
+                            ))}
+                        </div>
+                    </SlideInLeft>
 
                 </div>
             </div>

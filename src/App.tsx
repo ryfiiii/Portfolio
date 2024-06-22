@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from 'react'
 import Footer from './Components/Section/Footer'
 import Header from './Components/Section/Header'
 import Contact from './Pages/Contact'
@@ -6,38 +5,21 @@ import Creation from './Pages/Creation'
 import Profile from './Pages/Profile'
 import Skill from './Pages/Skill'
 import Splash from './Pages/Splash'
+import { useInView } from 'react-intersection-observer'
 
 const App = () => {
 
-    const [isScrolling, setIsScrolling] = useState<boolean>(false);
-    const mainContentRef = useRef<HTMLDivElement | null>(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsScrolling(entry.isIntersecting);
-            },
-            { threshold: [0.01] }
-        );
-
-        if (mainContentRef.current) {
-            observer.observe(mainContentRef.current);
-        }
-
-        return () => {
-            if (mainContentRef.current) {
-                observer.unobserve(mainContentRef.current);
-            }
-        };
-    }, [setIsScrolling]);
+    const { ref, inView } = useInView({ // 変更
+        threshold: 0.01,
+    });
 
     return (
         <>
             <div className="font-inter text-slate-600">
-                <Header isScrolling={isScrolling} />
+                <Header isScrolling={inView} />
                 <main>
                     <Splash />
-                    <div ref={mainContentRef}>
+                    <div ref={ref}>
                         <Profile />
                         <Skill />
                         <Creation />
