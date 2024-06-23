@@ -8,7 +8,7 @@ const SlideInRight = ({ children }: SlideInRightProps) => {
 
     const { ref, inView } = useInView({
         triggerOnce: true,
-        threshold: 0.15,
+        threshold: 0,
     });
 
     return (

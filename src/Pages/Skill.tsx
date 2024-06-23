@@ -6,7 +6,7 @@ import { backend, frontend, others } from "../Config/Skill";
 const Skill = () => {
     return (
         <section id="skill">
-            <div className="w-full min-h-screen bg-skill-image bg-cover bg-center bg-scroll lg:bg-fixed py-20">
+            <div className="w-full min-h-screen bg-skill-image bg-cover bg-center bg-scroll lg:bg-fixed py-20 overflow-hidden">
                 <div className="w-3/4 mx-auto flex flex-col justify-center items-center gap-16">
                     <h2 className="font-bold text-4xl drop-shadow-2xl text-slate-200">Skill</h2>
 
