@@ -20,7 +20,7 @@ export const creation: Creation[] = [
         name: "ShareCode",
         image: shareCodeImage,
         description: "「手軽に、瞬時に、世界中へ。ちょっとしたコードをすぐに共有できるサービス」※現在制作中",
-        link: null,
+        link: "https://sharecode.ryfiii.com/",
         github: "https://github.com/ryfiiii/ShareCode?tab=readme-ov-file#readme",
         stack: ["React", "TypeScript", "Tailwind CSS", "DaisyUI", "Laravel", "Inertia", "MySQL"],
     },
@@ -35,7 +35,7 @@ export const creation: Creation[] = [
     {
         name: "BlogShop",
         image: blogShopImage,
-        description: "ブログ記事の投稿・閲覧・購入が出来るプラットフォーム",
+        description: "ブログ記事の投稿・閲覧・購入が出来るプラットフォーム(練習で制作したため非公開)",
         link: null,
         github: "https://github.com/ryfiiii/Laravel_Stripe_Blog?tab=readme-ov-file#readme",
         stack: ["Laravel", "Stripe", "microCMS", "MySQL"],
@@ -43,9 +43,9 @@ export const creation: Creation[] = [
     {
         name: "RealtimeChat",
         image: realTimeChatImage,
-        description: "Line風のリアルタイムでやり取りが出来るチャットアプリケーション",
+        description: "Line風のリアルタイムでやり取りが出来るチャットアプリケーション(練習で制作したため非公開)",
         link: null,
         github: "https://github.com/ryfiiii/vue_express_chatapp?tab=readme-ov-file#vuejs--express--typescript-chat%E3%82%A2%E3%83%97%E3%83%AA",
-        stack: ["Vue.js", "TypeScript", "Express", "Socket.io", "MySQL"],
+        stack: ["Vue.js", "Express", "Socket.io", "MySQL"],
     },
 ];
