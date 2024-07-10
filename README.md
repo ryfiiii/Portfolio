@@ -9,5 +9,4 @@ GitHubをご覧いただき、ありがとうございます。
 - React
 - TypeScript
 - TailwindCss
-- DaisyUI
 - Vite
