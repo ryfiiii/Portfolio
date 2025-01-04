@@ -5,7 +5,6 @@ import portfolioImage from "../assets/creation/portfolio.png";
 import shareCodeImage from "../assets/creation/sharecode.png";
 import ryuTechImage from "../assets/creation/ryutech.png";
 import blogShopImage from "../assets/creation/blogshop.png";
-import realTimeChatImage from "../assets/creation/realtimechat.png";
 
 export const creation: Creation[] = [
     {
