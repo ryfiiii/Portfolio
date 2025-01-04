@@ -40,12 +40,4 @@ export const creation: Creation[] = [
         github: "https://github.com/ryfiiii/Laravel_Stripe_Blog?tab=readme-ov-file#readme",
         stack: ["Laravel", "Stripe", "microCMS", "MySQL"],
     },
-    {
-        name: "RealtimeChat",
-        image: realTimeChatImage,
-        description: "Line風のリアルタイムでやり取りが出来るチャットアプリケーション(練習で制作したため非公開)",
-        link: null,
-        github: "https://github.com/ryfiiii/vue_express_chatapp?tab=readme-ov-file#vuejs--express--typescript-chat%E3%82%A2%E3%83%97%E3%83%AA",
-        stack: ["Vue.js", "Express", "Socket.io", "MySQL"],
-    },
 ];

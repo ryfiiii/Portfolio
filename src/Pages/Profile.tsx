@@ -26,10 +26,10 @@ const Profile = () => {
                                 </div>
                                 <p className="text-3xl font-semibold text-center lg:text-start">経歴</p>
                                 <div className="flex flex-col gap-3">
-                                    <p className="underline">2023/04 中小SES企業</p>
-                                    <p>新卒エンジニアとしてキャリアをスタート。ウェブ開発を中心に、幅広い技術スタックの基礎を習得。</p>
-                                    <p className="underline">2024/04 某国内クラウド企業</p>
-                                    <p>基盤システム・VPS系統のシステム保守・新規開発を行う。</p>
+                                    <p className="underline">2023/04~ 中小SES企業</p>
+                                    <p>新卒エンジニアとしてキャリアをスタート。Web開発を中心に、幅広い技術スタックの基礎を習得。</p>
+                                    <p className="underline">2024/04~ 某国内クラウド企業</p>
+                                    <p>基盤システム・VPS系のシステムの新規開発・保守を行う。</p>
                                 </div>
                             </div>
                         </div>

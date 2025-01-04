@@ -83,6 +83,16 @@ export const others: Skill[] = [
         level: 4,
     },
     {
+        name: "OpenStack",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openstack/openstack-original.svg",
+        level: 3,
+    },
+    {
+        name: "WordPress",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
+        level: 3,
+    },
+    {
         name: "vsCode",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
         level: 5,
@@ -91,5 +101,10 @@ export const others: Skill[] = [
         name: "Windows",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg",
         level: 5,
+    },
+    {
+        name: "Linux",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+        level: 3,
     },
 ];
